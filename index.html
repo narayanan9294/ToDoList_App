@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+</head>
+<body onload="doDisplay()" style=" font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; ; margin: auto ; padding: 50px; ;
+">
+    <h1 style="text-align: center;">TODO LIST for Bills</h1>
+
+<!-- div for inser list from javascript to html -->
+<div id="mybill"  ></div>
+<span id="list">list : </span><input type="text" name="" id="input"> <br><br>
+
+<!-- Grouping  buttons in a div  -->
+<div id="arrBtn"><button onclick="doTo('push')">Push</button> &nbsp;
+    <button onclick="doTo('pop')">Pop</button> &nbsp;
+    <button onclick="doTo('shift')">Shift</button> &nbsp;
+    <button onclick="doTo('unshift')">Unshift</button> &nbsp; <br></div>
+
+    <!-- Update textbox & Button  for 'EditFunction'  -->
+<input type="text" style="display: none;" name="" id="updateBox"> &nbsp; <button id="updateBtn" onclick='updateArr()' style="display: none;" >Update</button>
+
+</body>
+<script src="index.js"></script>
+</html>
